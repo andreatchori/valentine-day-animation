@@ -1,0 +1,149 @@
+.fontLoaded .vday-container,
+.splash-page,
+.pl-wrapper {
+    /* Teaser Font */
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
+}
+
+.sound-info {
+    font-family: "Arial", sans-serif;
+}
+
+.pl-wrapper .hashtag {
+    font-weight: 700;
+}
+
+#valentine-day h1 {
+    -webkit-text-stroke: 0px;
+}
+
+.lt-main {
+    font-size: 18px;
+    font-size: 5vw;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.highlight {
+    color: #ED1C24;
+}
+
+.confetti {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.splash-page .centered {
+    white-space: normal;
+}
+
+.splash-page .st-btn {
+    margin: 0;
+}
+
+.pl-wrapper {
+    display: none;
+}
+
+.YTPOverlay,
+.bv-overlay {
+    display: none;
+}
+
+#vday-button {
+    margin-top: 16px;
+    min-width: 100px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 26px;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 14px;
+    background: #ED1C24 !important;
+    border: 0px !important;
+    border-radius: 0;
+}
+
+#vday-button:hover {
+    background: #fff !important;
+    color: #000;
+}
+
+.countdown-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.sk-double-bounce .sk-child {
+    background: none #FFF;
+}
+
+.splash-page .btn-fill {
+    font-weight: 700;
+    background: #ED1C24;
+}
+
+.logo-img {
+    max-width: 240px;
+}
+
+@media only screen and (min-width: 768px) {
+    .lt-main {
+        font-size: 38px;
+        font-size: 4.5vw;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .lt-main {
+        font-size: 48px;
+        font-size: 4.5vw;
+    }
+    #vday-button {
+        min-width: 160px;
+        height: 42px;
+        line-height: 42px;
+    }
+    .logo-img {
+        max-width: 70%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .lt-main {
+        font-size: 64px;
+        font-size: 4.5vw;
+    }
+    #vday-button {
+        min-width: 180px;
+        height: 46px;
+        line-height: 46px;
+    }
+    .logo-img {
+        max-width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1824px) {
+    .lt-main {
+        font-size: 92px;
+        font-size: 4.5vw;
+    }
+    #vday-button {
+        min-width: 200px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .logo-img {
+        max-width: 100%;
+    }
+}
