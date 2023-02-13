@@ -1,17 +1,5 @@
-/* =============================================================================================
-* Table of Contents:
-*
-* 1.0 - Load Custom, Google Fonts
-* 2.0 - Simple Fixes
-* 3.0 - Set Teaser FPS (Optional)
-* 4.0 - Initialize vday Teaser Plugin
-* 5.0 - Teaser Controls (Play / Pause / Restart/ Mute / Skip)
-============================================================================================= */
 "use strict";
 
-/* ==================================================================
-	Global Variables
-================================================================== */
 var isFontActive = false, // to check if Main Font is loaded before the teaser initiates
     isFirefox = typeof InstallTrigger !== 'undefined',
     isIE = /*@cc_on!@*/ false || !!document.documentMode,
@@ -19,14 +7,7 @@ var isFontActive = false, // to check if Main Font is loaded before the teaser i
     isChrome = !!window.chrome && !!window.chrome.webstore;
 
 $(function() {
-
-    /* ==================================================================
-    1.0 Load Custom, Google Fonts
-    ================================================================== */
     WebFont.load({
-        // custom: {
-        // 	families: [ 'TeXGyreHeros' ]
-        // },
         google: {
             families: ['Montserrat:400,700']
         },
@@ -45,11 +26,6 @@ $(function() {
 
     // add class "highlight" to sound button
     $(".pl-sound").parent().addClass("highlight");
-
-    /* ==================================================================
-    2.0 Simple Fixes
-    ================================================================== */
-
     /* Preloader Animation Fallback for ie9 */
     if (navigator.userAgent.indexOf('MSIE') != -1)
         var detectIEregexp = /MSIE (\d+\.\d+);/ //test for MSIE x.x
