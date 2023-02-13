@@ -38,23 +38,6 @@ $(function() {
         }
     }
 
-    if ($(".st-countdown").length) {
-        var launchDate = $(".st-countdown").attr("data-launch-date") ? $(".st-countdown").attr("data-launch-date") : new Date(new Date().getTime() + 144 * 60 * 60 * 1000);
-        $(".st-countdown").countdown(launchDate, function(event) {
-            $(this).text(
-                event.strftime('%D Days %H:%M:%S')
-            );
-        });
-    }
-
-    /* ==================================================================
-    3.0 Set Teaser FPS (Optional)
-    ================================================================== */
-    //TweenLite.ticker.fps(25);
-
-    /* ==================================================================
-    4.0 Initialize vday Teaser Plugin
-    ================================================================== */
     var $vdayContainer = $(".vday-container");
     var freezeProp = $vdayContainer.attr("data-freeze-prop") ? parseBool($vdayContainer.attr("data-freeze-prop")) : true;
 
@@ -83,7 +66,6 @@ $(function() {
 
     /* Initiate vday Teaser Plugin */
     $vdayContainer.vdayPlugin({
-
         // General Options
         autoStart: autoStartProp,
         fullDuration: "default",
@@ -93,24 +75,16 @@ $(function() {
         preloadScenes: false,
         videoOnMobiles: true,
         //stopTeaserOnEnd: false, // If you want to continue playing the video on the background and audio, set it to false. Otherwise set it to true.
-
         // preload options
         preloadMethod: preMethod,
-        preloadFiles: ["images/1x1.png"],
         fileTimeout: 8000,
         audioTimeout: 8000,
         initAfter: 80,
-
         // other options
         colors: ["#E7464F", "#CDAA20", "#80993B", "#07BABA", "#9B2C9D"],
         showAnimationSummary: false,
         freezeOnBlur: freezeProp,
         videoPlaybackChange: false,
-
-        // callback functions
-        // 1- onTeaserReady, 2- onTeaserStart, 3- onTeaserEnd
-        // 4- onBeforeScene, 5- onBeforeIn, 6 - onBeforeFreeze
-        // 7- onBeforeOut, 8- onAfterScene
         onTeaserReady: function() {
             $(".mbYTP_wrapper").css("visibility", "hidden");
             // Hide preloader here
@@ -127,7 +101,6 @@ $(function() {
         },
         onTeaserStart: function() {
             $(".vday-container").focus();
-
             // adjust line height to fix the text to center. (some fonts wont need this)
             // $(".lt-main").css({"line-height" : "1"});
 
@@ -136,9 +109,6 @@ $(function() {
         }
     });
 
-    /* ==================================================================
-    5.0 Teaser Controls (Play / Pause / Restart/ Mute / Skip)
-    ================================================================== */
     /* 1. Skip To Main Site / Content */
     $('.pl-skip').on('click', function(ev) {
         // $vdayContainer.vdayPlugin.pauseTeaser();

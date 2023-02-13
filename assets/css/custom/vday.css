@@ -1,8 +1,13 @@
+@font-face {
+    font-family: loveFont;
+    src: url(../fonts/love-font.ttf);
+}
+
 .fontLoaded .vday-container,
 .splash-page,
 .pl-wrapper {
     /* Teaser Font */
-    font-family: 'Montserrat', sans-serif;
+    font-family: loveFont, sans-serif;
 }
 
 body {

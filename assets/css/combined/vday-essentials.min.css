@@ -489,30 +489,30 @@
 
 @-webkit-keyframes greenPulse {
     from {
-        background-color: #749a02;
+        background-color: #e84393;
         -webkit-box-shadow: 0 0 9px #333
     }
     50% {
-        background-color: #91bd09;
-        -webkit-box-shadow: 0 0 18px #91bd09
+        background-color: #e84393;
+        -webkit-box-shadow: 0 0 18px #e84393
     }
     to {
-        background-color: #749a02;
+        background-color: #e84393;
         -webkit-box-shadow: 0 0 9px #333
     }
 }
 
 @keyframes greenPulse {
     from {
-        background-color: #749a02;
+        background-color: #e84393;
         -webkit-box-shadow: 0 0 9px #333
     }
     50% {
-        background-color: #91bd09;
-        -webkit-box-shadow: 0 0 18px #91bd09
+        background-color: #e84393;
+        -webkit-box-shadow: 0 0 18px #e84393
     }
     to {
-        background-color: #749a02;
+        background-color: #e84393;
         -webkit-box-shadow: 0 0 9px #333
     }
 }
